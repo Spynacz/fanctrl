@@ -64,6 +64,10 @@ compile_commands.json
 CTestTestfile.cmake
 _deps
 bin
+.cmake
 
 # Ninja
 build.ninja
+.ninja_deps
+.ninja_log
+
