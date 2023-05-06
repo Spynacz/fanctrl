@@ -126,7 +126,7 @@ void temp_rule() {
     else if (max_temp_hyst >= MAX_TEMP)
         pwm_val = MAX_PWM;
     else {
-        pwm_val = (int)(MIN_PWM + ((max_temp_hyst - MIN_TEMP) / (MAX_TEMP - MIN_TEMP) * (MAX_PWM - MIN_PWM)));
+        pwm_val = (int)(MIN_PWM + ((float)(max_temp_hyst - MIN_TEMP) / (float)(MAX_TEMP - MIN_TEMP)) * (MAX_PWM - MIN_PWM));
     }
 
     cha1_pwm = pwm_val;
